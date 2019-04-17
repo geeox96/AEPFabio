@@ -10,10 +10,10 @@ const curtidas = require(path.join(__dirname, 'functions', 'curtidas'))
 const comentarios = require(path.join(__dirname, 'functions', 'comentarios'))
 
 module.exports = {
-  users: (event, context) => {
-    if (event.resource === '/usuarios' && event.httpMethod === 'GET') return users.get(event, context)
-    if (event.resource === '/usuario' && event.httpMethod === 'POST') return users.post(event, context)
-    if (event.resource === '/usuario/{id}' && event.httpMethod === 'GET') return users.get(event, context)
+  usuarios: (event, context) => {
+    if (event.resource === '/usuarios' && event.httpMethod === 'GET') return usuarios.get(event, context)
+    if (event.resource === '/usuario' && event.httpMethod === 'POST') return usuarios.post(event, context)
+    if (event.resource === '/usuario/{id}' && event.httpMethod === 'GET') return usuarios.get(event, context)
   }
 }
 
