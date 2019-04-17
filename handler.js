@@ -3,7 +3,7 @@
 require('dotenv').config()
 const path = require('path')
 
-const users = require(path.join(__dirname, 'functions', 'users'))
+const usuarios = require(path.join(__dirname, 'functions', 'usuarios'))
 const logs = require(path.join(__dirname, 'functions', 'logs'))
 const posts = require(path.join(__dirname, 'functions', 'posts'))
 const curtidas = require(path.join(__dirname, 'functions', 'curtidas'))
