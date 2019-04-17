@@ -7,19 +7,19 @@ provider:
     stage: pro
     region: us-east-1
 functions:
-    users:
-        handler: handler.users
+    usuarios:
+        handler: handler.usuarios
         events:
             - http:
-                path: users
+                path: usuarios
                 method: get
                 cors: true
             - http:
-                path: users/{id}
+                path: usuarios/{id}
                 method: get
                 cors: true
             - http:
-                path: users
+                path: usuarios
                 method: post
                 cors: true
 
