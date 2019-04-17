@@ -21,8 +21,6 @@ module.exports = {
   logs: (event, context) => {
     if (event.resource === '/logs' && event.httpMethod === 'GET') return logs.get(event, context)
     if (event.resource === '/logs' && event.httpMethod === 'POST') return logs.post(event, context)
-    if (event.resource === '/logs' && event.httpMethod === 'PUT') return logs.put(event, context)
-    if (event.resource === '/logs' && event.httpMethod === 'DELETE') return logs.remove(event, context)
     if (event.resource === '/logs/{id}' && event.httpMethod === 'GET') return logs.get(event, context)
   }
 }
