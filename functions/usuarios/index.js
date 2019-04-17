@@ -1,6 +1,6 @@
   
-const get = require('./users_get.js')
-const post = require('./users_post.js')
+const get = require('./usuarios_get.js')
+const post = require('./usuario_post.js')
 
 module.exports = {
   get,
